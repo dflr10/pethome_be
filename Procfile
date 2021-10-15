@@ -1,1 +1,1 @@
-web: gunicorn authProject.wsgi
+web: gunicorn pethomeProject.wsgi
