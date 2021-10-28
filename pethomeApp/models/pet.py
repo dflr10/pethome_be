@@ -12,3 +12,4 @@ class Pet(models.Model):
     avaliable = models.BooleanField('avaliable', default=True)
     description = models.TextField('description', max_length=250, null=False)
     image = models.CharField('image', max_length=250, null=True)
+    user = models.ForeignKey('user', on_delete=models.CASCADE, null=False)
